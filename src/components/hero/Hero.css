@@ -256,6 +256,7 @@
   .figures div span:nth-child(1) {
     font-size: large;
   }
+
   .figures > div > span:nth-child(2) {
     font-size: small;
   }
@@ -292,6 +293,11 @@
     top: 4rem;
     align-self: center;
   }
+
+  .hero-image.active {
+    display: none;
+  }
+
   .hero-image-back {
     width: 15rem;
     left: 2rem;

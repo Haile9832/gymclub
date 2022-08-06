@@ -51,7 +51,7 @@ function Hero() {
   }, []);
 
   return (
-    <div className="hero">
+    <div className="hero" id="home">
       {isModalShow && (
         <LoginModal
           handleShowModal={handleShowModal}
@@ -141,9 +141,11 @@ function Hero() {
       {/*right-h*/}
 
       <div className="right-h">
-        <button className="btn" onClick={handleShowModal}>
-          Join Now
-        </button>
+        {!isModalShow && (
+          <button className="btn" onClick={handleShowModal}>
+            Join Now
+          </button>
+        )}
         {!isModalShow && (
           <div className="heart-rate">
             <img src={Heart} />

@@ -14,10 +14,10 @@ function App() {
   return (
     <div className="App">
       <Hero />
-      <Programs programsData={programsData}/>
+      <Programs programsData={programsData} />
       <Reasons />
-      <Plans plansData={plansData}/>
-      <Testimonials testimonialsData={testimonialsData}/>
+      <Plans plansData={plansData} />
+      <Testimonials testimonialsData={testimonialsData} />
       <Join />
       <Footer />
     </div>
