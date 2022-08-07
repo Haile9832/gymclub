@@ -7,7 +7,7 @@ import { Link } from "react-scroll";
 function Header() {
   const [menuOpened, setMenuOpened] = useState(false);
   const [mobileWidth, setmobileWidth] = useState();
-  const mobile = mobileWidth > 768 ? false : true;
+  const mobile = mobileWidth < 768 ? true : false;
   useEffect(() => {
     const handleResize = () => {
       setmobileWidth(window.innerWidth);
