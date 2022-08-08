@@ -32,7 +32,7 @@ function Header() {
           }}
           onClick={handleOpenMenu}
         >
-          <img src={Bars} style={{ width: "1.5rem", height: "1.5rem" }} />
+          <img src={Bars} style={{ width: "1.5rem", height: "1.5rem" }} alt=""/>
         </div>
       ) : (
         <ul className="header-menu">

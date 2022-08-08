@@ -3,9 +3,8 @@ import "./Plans.css";
 import { useEffect } from "react";
 
 function Plans({ plansData }) {
-  {
-    /*Header animation */
-  }
+  /*Header animation */
+
   useEffect(() => {
     const handleScroll = () => {
       const plansHeader = document.querySelector(".plans-header");
@@ -23,9 +22,8 @@ function Plans({ plansData }) {
     };
   }, []);
 
-  {
-    /*PlansCard animation */
-  }
+  /*PlansCard animation */
+
   useEffect(() => {
     const handleScroll = () => {
       const plansCard = document.querySelectorAll(".plans");
@@ -66,7 +64,7 @@ function Plans({ plansData }) {
             <div className="features">
               {plan.features.map((feature, index) => (
                 <div className="feature" key={index}>
-                  <img src={whiteTick} />
+                  <img src={whiteTick} alt="" />
                   <span>{feature}</span>
                 </div>
               ))}

@@ -11,9 +11,9 @@ import { useEffect, useState } from "react";
 function Hero() {
   const [numCount, setNumCount] = useState(true);
   const [isModalShow, setIsModalShow] = useState(false);
-  {
-    /*Scroll Animation */
-  }
+
+  /*Scroll Animation */
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > window.innerHeight - 100) {
@@ -28,16 +28,14 @@ function Hero() {
     };
   }, []);
 
-  {
-    /*Show Modal */
-  }
+  /*Show Modal */
+
   const handleShowModal = () => {
     setIsModalShow(!isModalShow);
   };
 
-  {
-    /*Hide Modal */
-  }
+  /*Hide Modal */
+
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 120) {
@@ -148,7 +146,7 @@ function Hero() {
         )}
         {!isModalShow && (
           <div className="heart-rate">
-            <img src={Heart} />
+            <img src={Heart} alt="" />
             <span>Heart Rate</span>
             <span>123 bpm</span>
           </div>

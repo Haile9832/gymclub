@@ -10,12 +10,12 @@ function Footer() {
       <hr />
       <div className="footer">
         <div className="social-links">
-          <img src={Github} />
-          <img src={Instagram} />
-          <img src={LinkedIn} />
+          <img src={Github} alt="" />
+          <img src={Instagram} alt="" />
+          <img src={LinkedIn} alt="" />
         </div>
         <div className="logo-f">
-          <img src={Logo} />
+          <img src={Logo} alt="" />
         </div>
       </div>
       <div className="blur footer-blur-1"></div>

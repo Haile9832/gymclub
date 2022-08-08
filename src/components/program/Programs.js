@@ -46,29 +46,29 @@ function Programs({ programsData }) {
     };
   }, [currentActive]);
   return (
-      <div className="programs" id="programs">
-        <div className="programs-header">
-          <span className="stroke-text">explore our</span>
-          <span>programs</span>
-          <span className="stroke-text">to shape you</span>
-        </div>
-        <div className="programs-category">
-          {programsData.map((programData, index) => (
-            <div
-              className={`category ${currentActive === index ? "active" : ""}`}
-              key={index}
-            >
-              {programData.image}
-              <span>{programData.heading}</span>
-              <span>{programData.details}</span>
-              <div className="join-now">
-                <span>Join Now</span>
-                <img src={RightArrow} />
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="programs" id="programs">
+      <div className="programs-header">
+        <span className="stroke-text">explore our</span>
+        <span>programs</span>
+        <span className="stroke-text">to shape you</span>
       </div>
+      <div className="programs-category">
+        {programsData.map((programData, index) => (
+          <div
+            className={`category ${currentActive === index ? "active" : ""}`}
+            key={index}
+          >
+            {programData.image}
+            <span>{programData.heading}</span>
+            <span>{programData.details}</span>
+            <div className="join-now">
+              <span>Join Now</span>
+              <img src={RightArrow} alt="" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 

@@ -12,9 +12,9 @@ function Testimonials({ testimonialsData }) {
   function handleRightClick() {
     selected === tLength - 1 ? setSelected(0) : setSelected(selected + 1);
   }
-  {
-    /*Scroll animation */
-  }
+
+  /*Scroll animation */
+
   useEffect(() => {
     const handleScroll = () => {
       const backSquare1 = document.querySelector(".back-square1");
@@ -38,9 +38,8 @@ function Testimonials({ testimonialsData }) {
     };
   }, []);
 
-  {
-    /*Scroll show arrows */
-  }
+  /*Scroll show arrows */
+
   useEffect(() => {
     const handleScroll = () => {
       const arrows = document.querySelector(".arrows");
@@ -95,8 +94,8 @@ function Testimonials({ testimonialsData }) {
           </div>
         ))}
         <div className="arrows">
-          <img onClick={() => handleLeftClick()} src={leftArrow} />
-          <img onClick={() => handleRightClick()} src={rightArrow} />
+          <img onClick={() => handleLeftClick()} src={leftArrow} alt="" />
+          <img onClick={() => handleRightClick()} src={rightArrow} alt="" />
         </div>
       </div>
     </div>
